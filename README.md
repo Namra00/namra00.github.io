@@ -1,18 +1,11 @@
-# Namra Desai Portfolio
+# Namra Desai — Portfolio
 
-A responsive static portfolio for GitHub Pages.
+Static portfolio prepared for GitHub Pages.
 
-## Publish
+## Deploy
 
-1. Copy the contents of this folder into the root of `Namra00/namra00.github.io`.
-2. Commit and push to the `main` branch.
-3. GitHub Pages will publish the updated site at `https://namra00.github.io/`.
+1. Copy all files and folders from this package into the root of `namra00.github.io`.
+2. Confirm `index.html`, `assets/`, `images/`, and `documents/` are at the same repository level.
+3. Commit and push to the publishing branch.
 
-No build step or package installation is required.
-
-## Main files
-
-- `index.html` - site content and structure
-- `assets/css/main.css` - all styling and responsive behavior
-- `assets/js/site.js` - mobile navigation, active section state, and reveal effects
-- `documents/` - downloadable SDE resume and academic CV
+The site intentionally uses versioned asset names (`portfolio-2026.css` and `portfolio-2026.js`) so the previous portfolio stylesheet cannot be served from browser or GitHub Pages caches.
