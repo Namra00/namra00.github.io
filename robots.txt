@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://namra00.github.io/sitemap.xml
