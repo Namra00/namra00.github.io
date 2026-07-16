@@ -724,15 +724,41 @@ code {
 
 .achievement-feature {
   display: grid;
-  grid-template-columns: minmax(280px, 1.05fr) minmax(300px, 0.95fr);
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
   align-items: center;
   gap: 2rem;
+  width: 100%;
+  max-width: 100%;
   margin-top: 2rem;
   padding: 1.25rem;
   border: 1px solid var(--border-color);
   border-radius: 1.25rem;
   background: var(--surface-color);
-  overflow: hidden;
+}
+
+.achievement-content {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.achievement-content h3,
+.achievement-content p {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.achievement-content .tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.achievement-content .tech-list span {
+  max-width: 100%;
+  white-space: normal;
 }
 
 .achievement-image {
@@ -764,12 +790,18 @@ code {
   font-size: 0.95rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .achievement-feature {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .achievement-image {
+    width: 100%;
+    max-width: 650px;
+    margin-inline: auto;
   }
 }
-
 .project-card {
   position: relative;
   padding: 1.75rem;
