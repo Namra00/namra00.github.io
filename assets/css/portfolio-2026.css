@@ -722,6 +722,54 @@ code {
   gap: 1.25rem;
 }
 
+.achievement-feature {
+  display: grid;
+  grid-template-columns: minmax(280px, 1.05fr) minmax(300px, 0.95fr);
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+  background: var(--surface-color);
+  overflow: hidden;
+}
+
+.achievement-image {
+  overflow: hidden;
+  border-radius: 0.9rem;
+  aspect-ratio: 750 / 585;
+}
+
+.achievement-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.achievement-feature:hover .achievement-image img {
+  transform: scale(1.025);
+}
+
+.achievement-content h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-meta {
+  margin-bottom: 1rem;
+  color: var(--muted-text-color);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 800px) {
+  .achievement-feature {
+    grid-template-columns: 1fr;
+  }
+}
+
 .project-card {
   position: relative;
   padding: 1.75rem;
